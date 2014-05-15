@@ -10,10 +10,10 @@
     <h2 class="text-center">- an Angular store -</h2>
     <ul class="list-group">
       <li class="list-group-item" ng-repeat="product in store.products">
-        <img ng-src="img/{{product.img}}" width="25%" />
+        <img ng-src="img/{{product.img}}" width= 25% />
         <h3>
           {{product.name}}
-          <em class="pull-right">${{product.price}}</em>
+          <em class="pull-right">{{product.price | currency}}</em>
         </h3>
         <p>{{product.description}}</p>
       </li>
